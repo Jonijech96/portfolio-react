@@ -55,7 +55,12 @@ const MySkills = () => {
             visible: {opacity: 1, y: 0}
           }}
         >
-
+          <div className="relative h-32">
+            <div className="z-10">
+              <p>01</p>
+              <p></p>
+            </div>
+          </div>
         </motion.div>
       </div>
     </section>
