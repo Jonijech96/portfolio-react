@@ -1,27 +1,24 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}",
-  ],
-  mode:'jit',
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  mode: "jit",
   theme: {
     extend: {
-      colors:{
+      colors: {
         blue: "#2CBCE9",
-        red: "#DC4492",
+        red: "#E1676A",
         yellow: "#FDCC49",
         grey: "#ededed",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
-        "opaque-black": "rgba(0,0,0,0.35)"
+        "opaque-black": "rgba(0,0,0,0.35)",
       },
-      backgroundImage: (theme) =>({
+      backgroundImage: (theme) => ({
         "gradient-rainbow":
           "linear-gradient(81.66deg, #00B5EE 7.21%, #FF45A4 45.05%, #FFBA00 78.07%)",
 
         "gradient-rainblue":
-          "linear-gradient(90deg, #24CBFF 14.53%, #FC59FF 69.36%, #FFBD0C 117.73%)",
+          "linear-gradient(to right top, #eb8741, #ec8049, #eb7951, #ea7358, #e76d60, #e36967, #df656d, #d96273, #d26079, #ca5e7e, #c15d83, #b85c87);",
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
@@ -44,4 +41,4 @@ module.exports = {
     },
   },
   plugins: [],
-}
+};
