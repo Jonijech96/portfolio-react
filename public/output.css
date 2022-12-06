@@ -996,6 +996,11 @@ video {
   color: rgb(253 204 73 / var(--tw-text-opacity));
 }
 
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
 .placeholder-opaque-black::-moz-placeholder{
   color: rgba(0,0,0,0.35);
 }
@@ -1200,6 +1205,10 @@ body,
 
   .md\:max-w-\[600px\]{
     max-width: 600px;
+  }
+
+  .md\:max-w-\[500px\]{
+    max-width: 500px;
   }
 
   .md\:items-center{

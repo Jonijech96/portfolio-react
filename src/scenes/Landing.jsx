@@ -2,7 +2,7 @@ import React from "react";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
-import profileImg from "../assets/profile-image.png";
+import profileImg from "../assets/fotoPerfil.png";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 
 const Landing = ({ setSelectedPage }) => {
@@ -19,7 +19,7 @@ const Landing = ({ setSelectedPage }) => {
             <img
               src={profileImg}
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
+              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] "
             />
           </div>
         ) : (
@@ -46,7 +46,10 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Jonathan E. Chorolque
           </p>
-          <p className="mt-10 mb-7 text-sm text-center md:text-start">
+          <p className="text-3xl mt-3 font-playfair z-10 text-center md:text-start">
+            React Web Developer
+          </p>
+          <p className="mt-7 mb-7 text-sm text-center md:text-start">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
             voluptates odit quas quod libero eum rerum inventore quidem amet
             perspiciatis!
