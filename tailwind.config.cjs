@@ -22,6 +22,7 @@ module.exports = {
       }),
       fontFamily: {
         playfair: ["Playfair Display", "serif"],
+        poppins: ["Poppins", "sans-serif"],
         opensans: ["Open Sans", "sans-serif"],
       },
       content: {
@@ -29,6 +30,18 @@ module.exports = {
         person1: "url('./assets/person-1.png')",
         person2: "url('./assets/person-2.png')",
         person3: "url('./assets/person-3.png')",
+      },
+      boxShadow: {
+        profile: "inset 0 0 0 9px rgb(225 103 106 / 70%)",
+      },
+      animation: {
+        profileAnimate: "profileAnimate 8s ease-in-out infinite 1s",
+      },
+      keyframes: {
+        profileAnimate: {
+          "0%, 100%": { borderRadius: "60% 40% 30% 70%/60% 30% 70% 40%" },
+          "50%": { borderRadius: "30% 60% 70% 40%/50% 60% 30% 60%" },
+        },
       },
     },
     screens: {

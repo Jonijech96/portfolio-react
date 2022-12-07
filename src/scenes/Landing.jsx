@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import profileImg from "../assets/fotoPerfil.png";
 import SocialMediaIcons from "../components/SocialMediaIcons";
+import Typewriter from "typewriter-effect";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -15,18 +16,18 @@ const Landing = ({ setSelectedPage }) => {
       {/* IMAGE SECTION */}
       <div className="md:order-2 flex justify-center basis-3/5 z-10 mt-16 md:mt-32">
         {isAboveMediumScreens ? (
-          <div className="relative z-0 ml-20 before:absolute before:-top-20 before:-left-20 before:rounded-t-[400px] before:w-full before:max-w-[400px] before:h-full before:border-2 before:border-blue before:z-[-1]">
+          <div className="relative z-0 ml-20 ">
             <img
               src={profileImg}
               alt="profile"
-              className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] "
+              className="shadow-profile hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] animate-profileAnimate "
             />
           </div>
         ) : (
           <img
             src={profileImg}
             alt="profile"
-            className="hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[600px] "
+            className="shadow-profile animate-profileAnimate hover:filter hover:saturate-200 transition duration-500 z-10 w-4/5 max-w-[400px] md:max-w-[600px] "
           />
         )}
       </div>
@@ -46,9 +47,28 @@ const Landing = ({ setSelectedPage }) => {
           <p className="text-6xl font-playfair z-10 text-center md:text-start">
             Jonathan E. Chorolque
           </p>
-          <p className="text-3xl mt-3 font-playfair z-10 text-center md:text-start">
-            React Web Developer
+          <p className="text-3xl mt-3 font-playfair z-10 text-center md:text-start ">
+            Soy{" "}
           </p>
+          <div className="text-3xl font-playfair text-center md:text-start">
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .typeString("Web Developer")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .typeString("Frontend Developer")
+                  .pauseFor(2000)
+                  .deleteAll()
+                  .start();
+              }}
+            />
+          </div>
+
           <p className="mt-7 mb-7 text-sm text-center md:text-start">
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
             voluptates odit quas quod libero eum rerum inventore quidem amet
@@ -73,7 +93,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            Contact Me
+            Dowload CV
           </AnchorLink>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"

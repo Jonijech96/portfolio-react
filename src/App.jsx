@@ -18,7 +18,6 @@ function App() {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
-        // setSelectedPage("home");
       }
       if (window.scrollY !== 0) setIsTopOfPage(false);
     };
@@ -33,7 +32,7 @@ function App() {
         selectedPage={selectedPage}
         setSelectedPage={setSelectedPage}
       />
-      <div className="w-5/6 mx-auto md:h-full">
+      <div className="w-5/6 mx-auto md:h-full min-h-screen">
         {isAboveMediumScreens && (
           <DotGroup
             selectedPage={selectedPage}
