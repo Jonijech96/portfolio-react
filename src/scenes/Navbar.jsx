@@ -62,6 +62,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
+            <button className="bg-gray-700">Dia/Noche</button>
           </div>
         ) : (
           <>

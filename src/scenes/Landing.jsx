@@ -5,6 +5,7 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import profileImg from "../assets/fotoPerfil.png";
 import SocialMediaIcons from "../components/SocialMediaIcons";
 import Typewriter from "typewriter-effect";
+import CV from "../assets/CV.pdf";
 
 const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
@@ -88,13 +89,13 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <AnchorLink
+          <a
             className="bg-gradient-rainblue text-deep-blue rounded-sm py-3 px-7 font-semibold hover:bg-blue hover:text-white transition duration-500"
-            onClick={() => setSelectedPage("contact")}
-            href="#contact"
+            href={CV}
+            download
           >
             Dowload CV
-          </AnchorLink>
+          </a>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
             onClick={() => setSelectedPage("contact")}
