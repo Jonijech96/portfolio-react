@@ -4,11 +4,11 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 import skillsImage from "../assets/skills-image.png";
 
-const MySkills = () => {
+const AboutMe = () => {
   const isAboveMediumScreens = useMediaQuery("(mn-width: 1060px)");
 
   return (
-    <section id="skills" className="pt-10 pb-24 ">
+    <section id="about-me" className="pt-10 pb-24 ">
       {/* HEADER AND IMAGE SECTION */}
       <div className="md:flex md:justify-between md:gap-16 mt-32">
         <motion.div
@@ -23,7 +23,7 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="text-red">SKILLS</span>
+            ABOUT <span className="text-red"> ME</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -130,4 +130,4 @@ const MySkills = () => {
   );
 };
 
-export default MySkills;
+export default AboutMe;

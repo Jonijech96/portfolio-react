@@ -4,11 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
+/* html,
 body,
 #root,
 .App{
   height: 100%;
-  background-color: #010026;
-  @apply text-white;
-}
+  @apply dark:bg-slate-900 bg-slate-200  text-slate-700 dark:text-white;
+} */

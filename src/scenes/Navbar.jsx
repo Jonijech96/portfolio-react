@@ -4,8 +4,7 @@ import useMediaQuery from "../hooks/useMediaQuery";
 import { motion } from "framer-motion";
 
 const Link = ({ page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
-  const lowerCasePage = page.toLowerCase();
-
+  const lowerCasePage = page.replace(" ", "-").toLowerCase();
   return (
     <AnchorLink
       className={`${
@@ -24,8 +23,23 @@ const Link = ({ page, selectedPage, setSelectedPage, setIsMenuToggled }) => {
 
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
+  const [theme, setTheme] = useState("light");
   const isDesktop = useMediaQuery("(min-width: 768px)");
   const navbarBackground = isTopOfPage ? "" : "bg-red";
+
+  const handleThemeSwitch = () => {
+    const html = document.querySelector("html");
+
+    if (theme == "light") {
+      setTheme("dark");
+      html.classList.add("dark");
+    } else {
+      html.classList.remove("dark");
+      setTheme("light");
+    }
+    console.log(theme);
+  };
+
   const variants = {
     open: { opacity: 1, x: 0 },
     closed: { opacity: 0, x: "100%" },
@@ -40,9 +54,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold">
+          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold items-center">
             <Link
               page="Home"
+              selectedPage={selectedPage}
+              setSelectedPage={setSelectedPage}
+            />
+            <Link
+              page="About Me"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
@@ -62,7 +81,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
-            <button className="bg-gray-700">Dia/Noche</button>
+            <motion.button
+              className="rounded-full bg-red p-2 z-10"
+              onClick={() => handleThemeSwitch()}
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+            >
+              {theme === "light" ? <span>🌞</span> : <span>🌙</span>}
+            </motion.button>
           </div>
         ) : (
           <>

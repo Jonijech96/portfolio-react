@@ -101,7 +101,7 @@ const Landing = ({ setSelectedPage }) => {
             onClick={() => setSelectedPage("contact")}
             href="#contact"
           >
-            <div className="bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
+            <div className="bg-slate-100 dark:bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
               lets talk.
             </div>
           </AnchorLink>
@@ -118,7 +118,9 @@ const Landing = ({ setSelectedPage }) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-          <SocialMediaIcons />
+          <div className="brightness-0 dark:filter-none">
+            <SocialMediaIcons />
+          </div>
         </motion.div>
       </div>
     </section>
