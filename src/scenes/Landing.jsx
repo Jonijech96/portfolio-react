@@ -69,12 +69,6 @@ const Landing = ({ setSelectedPage }) => {
               }}
             />
           </div>
-
-          <p className="mt-7 mb-7 text-sm text-center md:text-start">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi
-            voluptates odit quas quod libero eum rerum inventore quidem amet
-            perspiciatis!
-          </p>
         </motion.div>
 
         {/* CALL TO ACTIONS */}
