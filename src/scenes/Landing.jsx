@@ -11,7 +11,7 @@ const Landing = ({ setSelectedPage }) => {
   const isAboveMediumScreens = useMediaQuery("(min-width: 1060px)");
   return (
     <section
-      id="home"
+      id="inicio"
       className="md:flex md:justify-between md:items-center gap-16 md:h-full py-10"
     >
       {/* IMAGE SECTION */}
@@ -88,7 +88,7 @@ const Landing = ({ setSelectedPage }) => {
             href={CV}
             download
           >
-            Dowload CV
+            Descargar CV
           </a>
           <AnchorLink
             className="rounded-r-sm bg-gradient-rainblue py-0.5 pr-0.5"
@@ -96,7 +96,7 @@ const Landing = ({ setSelectedPage }) => {
             href="#contact"
           >
             <div className="bg-slate-100 dark:bg-deep-blue hover:text-red transition duration-500 w-full h-full flex items-center justify-center font-playfair px-10">
-              lets talk.
+              Contactame
             </div>
           </AnchorLink>
         </motion.div>

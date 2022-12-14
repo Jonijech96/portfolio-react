@@ -56,28 +56,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {isDesktop ? (
           <div className="flex justify-between gap-16 font-opensans text-sm font-semibold items-center">
             <Link
-              page="Home"
+              page="Inicio"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="About Me"
+              page="Sobre mi"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Skills"
+              page="Habilidades"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Projects"
+              page="Proyectos"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
 
             <Link
-              page="Contact"
+              page="Contacto"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />
