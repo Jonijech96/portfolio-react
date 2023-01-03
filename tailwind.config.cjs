@@ -7,9 +7,10 @@ module.exports = {
     extend: {
       colors: {
         blue: "#2CBCE9",
-        red: "#E1676A",
+        red: "#99242A",
         yellow: "#FDCC49",
         grey: "#ededed",
+        "light-red": "#FF7A7A",
         "deep-blue": "#010026",
         "dark-grey": "#757575",
         "opaque-black": "rgba(0,0,0,0.35)",
@@ -33,7 +34,8 @@ module.exports = {
         person3: "url('./assets/person-3.png')",
       },
       boxShadow: {
-        profile: "inset 0 0 0 9px rgb(225 103 106 / 70%)",
+        profile: "inset 0 0 0 9px rgb(153 36 42 / 90%)",
+        light: "inset 0 0 0 9px rgb(255 122 122 / 90%)",
       },
       animation: {
         profileAnimate: "profileAnimate 8s ease-in-out infinite 1s",

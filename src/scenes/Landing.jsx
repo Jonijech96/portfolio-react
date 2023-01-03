@@ -21,14 +21,14 @@ const Landing = ({ setSelectedPage }) => {
             <img
               src={profileImg}
               alt="profile"
-              className="shadow-profile hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] animate-profileAnimate "
+              className="dark:shadow-light shadow-profile  hover:filter hover:saturate-200 transition duration-500 z-10 w-full max-w-[400px] md:max-w-[500px] animate-profileAnimate "
             />
           </div>
         ) : (
           <img
             src={profileImg}
             alt="profile"
-            className="shadow-profile animate-profileAnimate hover:filter hover:saturate-200 transition duration-500 z-10 w-4/5 max-w-[400px] md:max-w-[600px] "
+            className="dark:shadow-light shadow-profile animate-profileAnimate hover:filter hover:saturate-200 transition duration-500 z-10 w-4/5 max-w-[400px] md:max-w-[600px] "
           />
         )}
       </div>

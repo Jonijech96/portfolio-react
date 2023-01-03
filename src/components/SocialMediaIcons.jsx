@@ -4,7 +4,7 @@ import facebookIcon from "../assets/facebook.png";
 import instagramIcon from "../assets/instagram.png";
 const SocialMediaIcons = () => {
   return (
-    <div className="flex justify-center md:justify-start my:10 gap-7">
+    <div className="flex justify-center md:justify-start my:10 gap-7 ">
       <a
         target="_blank"
         href="https://wwww.linkedin.com"

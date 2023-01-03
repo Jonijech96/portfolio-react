@@ -24,7 +24,7 @@ const AboutMe = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            ABOUT <span className="text-red"> ME</span>
+            ABOUT <span className=" dark:text-light-red text-red"> ME</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
@@ -39,14 +39,14 @@ const AboutMe = () => {
               <img
                 src={profileImg}
                 alt="skills"
-                className="z-10 shadow-profile w-72"
+                className="z-10 dark:shadow-light shadow-profile w-72"
               />
             </div>
           ) : (
             <img
               src={profileImg}
               alt="skills"
-              className="z-10 shadow-profile w-96"
+              className="z-10 dark:shadow-light shadow-profile w-96"
             />
           )}
         </div>

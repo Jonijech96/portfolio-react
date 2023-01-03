@@ -25,7 +25,9 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const [theme, setTheme] = useState("light");
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage ? "" : "bg-red";
+  const navbarBackground = isTopOfPage
+    ? ""
+    : "bg-red dark:bg-light-red text-slate-800";
 
   const handleThemeSwitch = () => {
     const html = document.querySelector("html");
@@ -82,7 +84,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               setSelectedPage={setSelectedPage}
             />
             <motion.button
-              className="rounded-full bg-red p-2 z-10"
+              className="rounded-full dark:bg-light-red bg-red p-2 z-10"
               onClick={() => handleThemeSwitch()}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -93,7 +95,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         ) : (
           <>
             <motion.button
-              className="rounded-full bg-red p-2 z-10"
+              className="rounded-full dark:bg-light-red bg-red p-2 z-10"
               onClick={() => setIsMenuToggled(!isMenuToggled)}
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -109,7 +111,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               animate={isMenuToggled ? "open" : "closed"}
               variants={variants}
               transition={{ duration: 0.5 }}
-              className="fixed right-0 bottom-0 h-full bg-red w-[300px]"
+              className="fixed right-0 bottom-0 h-full dark:bg-light-red bg-red w-[300px]"
             >
               {/* MENU ITEMS */}
               <div className="flex flex-col  gap-10 h-full justify-center items-center text-2xl text-deep-blue">

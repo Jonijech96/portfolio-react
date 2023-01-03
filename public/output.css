@@ -831,11 +831,6 @@ video {
   border-bottom-right-radius: 0.125rem;
 }
 
-.bg-slate-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-blue{
   --tw-bg-opacity: 1;
   background-color: rgb(44 188 233 / var(--tw-bg-opacity));
@@ -853,7 +848,12 @@ video {
 
 .bg-red{
   --tw-bg-opacity: 1;
-  background-color: rgb(225 103 106 / var(--tw-bg-opacity));
+  background-color: rgb(153 36 42 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-grey{
@@ -1006,7 +1006,7 @@ video {
 
 .text-red{
   --tw-text-opacity: 1;
-  color: rgb(225 103 106 / var(--tw-text-opacity));
+  color: rgb(153 36 42 / var(--tw-text-opacity));
 }
 
 .text-deep-blue{
@@ -1037,7 +1037,7 @@ video {
 }
 
 .shadow-profile{
-  --tw-shadow: inset 0 0 0 9px rgb(225 103 106 / 70%);
+  --tw-shadow: inset 0 0 0 9px rgb(153 36 42 / 90%);
   --tw-shadow-colored: inset 0 0 0 9px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
@@ -1156,7 +1156,7 @@ body,
 
 .hover\:bg-red:hover{
   --tw-bg-opacity: 1;
-  background-color: rgb(225 103 106 / var(--tw-bg-opacity));
+  background-color: rgb(153 36 42 / var(--tw-bg-opacity));
 }
 
 .hover\:bg-blue:hover{
@@ -1171,7 +1171,7 @@ body,
 
 .hover\:text-red:hover{
   --tw-text-opacity: 1;
-  color: rgb(225 103 106 / var(--tw-text-opacity));
+  color: rgb(153 36 42 / var(--tw-text-opacity));
 }
 
 .hover\:text-yellow:hover{
@@ -1206,13 +1206,39 @@ body,
   background-color: rgb(1 0 38 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-light-red{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 122 122 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.dark .dark\:text-light-red{
+  --tw-text-opacity: 1;
+  color: rgb(255 122 122 / var(--tw-text-opacity));
+}
+
+.dark .dark\:text-deep-blue{
+  --tw-text-opacity: 1;
+  color: rgb(1 0 38 / var(--tw-text-opacity));
+}
+
+.dark .dark\:shadow-light{
+  --tw-shadow: inset 0 0 0 9px rgb(255 122 122 / 90%);
+  --tw-shadow-colored: inset 0 0 0 9px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
 .dark .dark\:filter-none{
   filter: none;
+}
+
+.dark .dark\:backdrop\:invert::backdrop{
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 768px){
