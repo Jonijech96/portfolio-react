@@ -23,13 +23,10 @@ const MySkills = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            MY <span className="dark:text-light-red text-red">SKILLS</span>
+            MIS{" "}
+            <span className="dark:text-light-red text-red">HABILIDADES</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            itaque repellendus molestiae doloremque!
-          </p>
         </motion.div>
 
         <div className="mt-16 md:mt-0">
@@ -60,16 +57,38 @@ const MySkills = () => {
             <div className="relative z-10">
               <p className="font-playfair font-semibold text-5xl">01</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Experience
+                FRONTEND
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-blue absolute right-0 top-0" />
           </div>
-          <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            odio. Maxime possimus quos soluta minus quam cumque autem sapiente
-            quia.
-          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <img alt="close-icon" src="../assets/html-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/css-icon.svg" width={50} />
+            <img
+              alt="close-icon"
+              src="../assets/javascript-icon.svg"
+              width={50}
+            />
+            <img alt="close-icon" src="../assets/react-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/redux-icon.svg" width={50} />
+            <img
+              alt="close-icon"
+              src="../assets/tipescript-icon.svg"
+              width={50}
+            />
+            <img
+              alt="close-icon"
+              src="../assets/bootstrap-icon.svg"
+              width={50}
+            />
+            <img
+              alt="close-icon"
+              src="../assets/tailwind-icon.svg"
+              width={50}
+            />
+            <img alt="close-icon" src="../assets/sass-icon.svg" width={50} />
+          </div>
         </motion.div>
         {/* INNOVATIVE */}
         <motion.div
@@ -87,16 +106,25 @@ const MySkills = () => {
             <div className="relative z-10">
               <p className="font-playfair font-semibold text-5xl">02</p>
               <p className="font-playfair font-semibold text-3xl mt-3">
-                Innovative
+                BACKEND
               </p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-red absolute right-0 top-0 " />
           </div>
-          <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            odio. Maxime possimus quos soluta minus quam cumque autem sapiente
-            quia.
-          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <img alt="close-icon" src="../assets/node-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/express-icon.svg" width={50} />
+            <img
+              alt="close-icon"
+              src="../assets/sequelize-icon.svg"
+              width={50}
+            />
+            <img
+              alt="close-icon"
+              src="../assets/postgres-icon.svg"
+              width={50}
+            />
+          </div>
         </motion.div>
         {/* IMAGINATIVE */}
         <motion.div
@@ -113,17 +141,14 @@ const MySkills = () => {
           <div className="relative h-32">
             <div className="relative z-10">
               <p className="font-playfair font-semibold text-5xl">03</p>
-              <p className="font-playfair font-semibold text-3xl mt-3">
-                Imaginative
-              </p>
+              <p className="font-playfair font-semibold text-3xl mt-3">OTROS</p>
             </div>
             <div className="w-1/2 md:w-3/4 h-32 bg-yellow absolute right-0 top-0" />
           </div>
-          <p className="mt-5 ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit,
-            odio. Maxime possimus quos soluta minus quam cumque autem sapiente
-            quia.
-          </p>
+          <div className="mt-5 flex flex-wrap gap-2">
+            <img alt="close-icon" src="../assets/github-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/git-icon.svg" width={50} />
+          </div>
         </motion.div>
       </div>
     </section>

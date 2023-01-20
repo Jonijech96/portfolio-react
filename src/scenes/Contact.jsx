@@ -31,7 +31,7 @@ const Contact = () => {
       >
         <div>
           <p className="font-playfair font-semibold text-4xl mb-5 ">
-            <span className="yellow">CONTACT ME </span>TO GET STARTED
+            <span className="yellow">CONTACTAME </span> Y HABLEMOS
           </p>
           <div className="flex md:justify-end mt-5">
             <LineGradient width="mx-auto w-2/4" />
@@ -73,7 +73,7 @@ const Contact = () => {
             <input
               type="text"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3"
-              placeholder="NAME"
+              placeholder="NOMBRE"
               {...register("name", {
                 required: true,
                 maxLength: 100,
@@ -88,7 +88,7 @@ const Contact = () => {
             <input
               type="text"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              placeholder="EMAIL"
+              placeholder="CORREO"
               {...register("name", {
                 required: true,
                 pattern: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
@@ -103,7 +103,7 @@ const Contact = () => {
             <textarea
               type="text"
               className="w-full bg-blue font-semibold placeholder-opaque-black p-3 mt-5"
-              placeholder="MESSAGE"
+              placeholder="MENSAJE"
               rows="4"
               cols="50"
               {...register("message", {
@@ -123,7 +123,7 @@ const Contact = () => {
               type="submit"
               className="p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500"
             >
-              SEND ME A MESSAGE
+              ENVIAR MENSAJE
             </button>
           </form>
         </motion.div>

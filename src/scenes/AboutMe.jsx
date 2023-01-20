@@ -24,12 +24,17 @@ const AboutMe = () => {
           }}
         >
           <p className="font-playfair font-semibold text-4xl mb-5">
-            ABOUT <span className=" dark:text-light-red text-red"> ME</span>
+            SOBRE <span className=" dark:text-light-red text-red"> MI</span>
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
-            itaque repellendus molestiae doloremque!
+            Hola 👋🏽! Mi nombre es Jonathan Chorolque Y Soy Desarrolador Web. Me
+            considero una persona proactiva, responsable y disciplinada. Me
+            apasiona aprender cada dia un poco mas de la programacion ya sea
+            especializandome mas en un lenguaje o practicar uno nuevo🤓. me
+            gusta el Futbol y la Natacion y los deportes en general aunque
+            actualmente paso mas tiempo sentado en una silla frente a una
+            pantalla😅. Espero te guste mi portafolio👦🏽.
           </p>
         </motion.div>
 
