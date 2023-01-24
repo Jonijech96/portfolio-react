@@ -1,13 +1,13 @@
 import React from "react";
 import linkedinIcon from "../assets/linkedin.png";
-import facebookIcon from "../assets/facebook.png";
+import githubIcon from "../assets/github-icon.png";
 import instagramIcon from "../assets/instagram.png";
 const SocialMediaIcons = () => {
   return (
-    <div className="flex justify-center md:justify-start my:10 gap-7 ">
+    <div className="flex justify-center md:justify-start my:10 gap-7 items-center">
       <a
         target="_blank"
-        href="https://wwww.linkedin.com"
+        href="https://www.linkedin.com/in/jonathan-chorolque/"
         rel="noreferrer"
         className="hover:opacity-50 transition duration-500 "
       >
@@ -15,19 +15,11 @@ const SocialMediaIcons = () => {
       </a>
       <a
         target="_blank"
-        href="https://wwww.facebook.com"
+        href="https://github.com/Jonijech96/"
         rel="noreferrer"
-        className="hover:opacity-50 transition duration-500"
+        className="hover:opacity-50 transition duration-500 dark:invert rounded-full "
       >
-        <img src={facebookIcon} alt="facebook-link" />
-      </a>
-      <a
-        target="_blank"
-        href="https://wwww.instagram.com"
-        rel="noreferrer"
-        className="hover:opacity-50 transition duration-500"
-      >
-        <img src={instagramIcon} alt="instagram-link" />
+        <img alt="github-icon" src={githubIcon} width={40} />
       </a>
     </div>
   );

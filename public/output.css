@@ -818,12 +818,12 @@ video {
   gap: 1.5rem;
 }
 
-.gap-10{
-  gap: 2.5rem;
-}
-
 .gap-2{
   gap: 0.5rem;
+}
+
+.gap-10{
+  gap: 2.5rem;
 }
 
 .rounded-full{
@@ -1238,6 +1238,11 @@ body,
   --tw-shadow: inset 0 0 0 9px rgb(255 122 122 / 90%);
   --tw-shadow-colored: inset 0 0 0 9px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.dark .dark\:invert{
+  --tw-invert: invert(100%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .dark .dark\:filter-none{

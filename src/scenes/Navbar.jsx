@@ -140,6 +140,14 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
                   setSelectedPage={setSelectedPage}
                   setIsMenuToggled={setIsMenuToggled}
                 />
+                <motion.button
+                  className="rounded-full dark:bg-light-red bg-red p-2 z-10"
+                  onClick={() => handleThemeSwitch()}
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  {theme === "light" ? <span>🌞</span> : <span>🌙</span>}
+                </motion.button>
               </div>
             </motion.div>
           </>

@@ -54,7 +54,7 @@ const Projects = () => {
             <LineGradient width="w-2/3" />
           </div>
         </div>
-        <p className="mt-10 mb-10">
+        <p className="mt-10 mb-10 font-opensans font-semibold">
           Estos son mis principales proyectos, si quieres averiguar mis demas
           proyectos te recomiendo visitar mi github😉
         </p>

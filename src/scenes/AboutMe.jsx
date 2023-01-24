@@ -27,7 +27,7 @@ const AboutMe = () => {
             SOBRE <span className=" dark:text-light-red text-red"> MI</span>
           </p>
           <LineGradient width="w-1/3" />
-          <p className="mt-10 mb-7">
+          <p className="mt-10 mb-7 font-opensans font-semibold">
             Hola 👋🏽! Mi nombre es Jonathan Chorolque Y Soy Desarrolador Web. Me
             considero una persona proactiva, responsable y disciplinada. Me
             apasiona aprender cada dia un poco mas de la programacion ya sea
