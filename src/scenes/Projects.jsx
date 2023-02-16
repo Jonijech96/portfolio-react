@@ -1,6 +1,7 @@
 import LineGradient from "../components/LineGradient";
 import { motion } from "framer-motion";
-
+import linkIcon from "../assets/icon-enlace-extern.png";
+import githubIcon from "../assets/github-icon.png";
 const container = {
   hidden: {},
   visible: {
@@ -15,7 +16,7 @@ const projectVariant = {
   visible: { opacity: 1, scale: 1 },
 };
 
-const Project = ({ title, description, name }) => {
+const Project = ({ title, description, name, externalLink, githubLink }) => {
   const overlayStyles = `absolute h-full w-full opacity-0 hover:opacity-90 transition duration-500
     bg-grey z-30 flex flex-col justify-center items-center text-center p-16 text-deep-blue`;
   const projectTitle = title.split(" ").join("-").toLowerCase();
@@ -24,7 +25,15 @@ const Project = ({ title, description, name }) => {
     <motion.div variants={projectVariant} className="relative">
       <div className={overlayStyles}>
         <p className="text-2xl font-playfair">{name}</p>
-        <p className="mt-7">{description}</p>
+        <p className="mt-3">{description}</p>
+        <div className="flex gap-3">
+          <a href={externalLink} target="_blank">
+            <img alt="link-icon" src={linkIcon} width={40} />
+          </a>
+          <a href={githubLink} target="_blank">
+            <img alt="github-icon" src={githubIcon} width={40} />
+          </a>
+        </div>
       </div>
       <img src={`../assets/${projectTitle}.JPG`} alt={projectTitle} />
     </motion.div>
@@ -80,25 +89,45 @@ const Projects = () => {
             title="Project 1"
             name="E-commerce"
             description="Chakra UI, Tailwind, React, Redux"
+            externalLink="https://e-commerce-jonathan-chorolque.netlify.app"
+            githubLink="https://github.com/Jonijech96/e-commerce-react"
           />
-          <Project title="Project 2" name="Pokedex" description="Sass, React" />
-          <Project title="Project 3" name="CRUD" description="Chakra Ui" />
+          <Project
+            title="Project 2"
+            name="Pokedex"
+            description="Sass, React"
+            externalLink="https://incredible-frangollo-7111d6.netlify.app"
+            githubLink="https://github.com/Jonijech96/poke-api"
+          />
+          <Project
+            title="Project 3"
+            name="CRUD"
+            description="Chakra Ui"
+            externalLink="https://crudusers-jonathanchorolque.netlify.app/"
+            githubLink="https://github.com/Jonijech96/crud-api"
+          />
 
           {/* ROW 2 */}
           <Project
             title="Project 4"
             name="RickMorty Location"
             description="React"
+            githubLink="https://github.com/Jonijech96/rick-and-morty-App"
+            externalLink="https://mellifluous-mooncake-9db685.netlify.app"
           />
           <Project
             title="Project 5"
             name="Kumbia Fusion"
             description="Html, Javascript, Css"
+            externalLink="https://celadon-kitten-a656b1.netlify.app"
+            githubLink="https://github.com/Jonijech96/proyectoKumbia"
           />
           <Project
             title="Project 6"
             name="Box Generator"
             description="Html, Css, Javascript"
+            externalLink="https://subtle-chaja-e0a66c.netlify.app"
+            githubLink="https://github.com/Jonijech96/boxShadowGenerator"
           />
 
           {/* ROW 3 */}
@@ -106,16 +135,22 @@ const Projects = () => {
             title="Project 7"
             name="Clima api"
             description="React, Css"
+            externalLink="https://lucky-pegasus-836b1c.netlify.app/"
+            githubLink="https://github.com/Jonijech96/project-weather"
           />
           <Project
             title="Project 8"
             name="E-commerce2"
             description="Html, Javascript, Css"
+            externalLink="https://taupe-tartufo-9e56e3.netlify.app"
+            githubLink="https://github.com/Jonijech96/e-commerce"
           />
           <Project
             title="Project 9"
             name="LandingPage"
             description="Html, Css"
+            externalLink="https://jade-paprenjak-43df8d.netlify.app"
+            githubLink="https://github.com/Jonijech96/maquetacion1"
           />
           {/* <div
             className="flex justify-center text-center items-center p-10 bg-blue
