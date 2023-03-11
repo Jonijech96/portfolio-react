@@ -116,26 +116,26 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
               {/* MENU ITEMS */}
               <div className="flex flex-col  gap-10 h-full justify-center items-center text-2xl text-deep-blue">
                 <Link
-                  page="Home"
+                  page="Sobre mi"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                   setIsMenuToggled={setIsMenuToggled}
                 />
                 <Link
-                  page="Skills"
+                  page="Habilidades"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                   setIsMenuToggled={setIsMenuToggled}
                 />
                 <Link
-                  page="Projects"
+                  page="Proyectos"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                   setIsMenuToggled={setIsMenuToggled}
                 />
 
                 <Link
-                  page="Contact"
+                  page="Contacto"
                   selectedPage={selectedPage}
                   setSelectedPage={setSelectedPage}
                   setIsMenuToggled={setIsMenuToggled}
