@@ -59,10 +59,10 @@ const Landing = ({ setSelectedPage }) => {
               }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString("Web Developer")
+                  .typeString("Fullstack Web Developer")
                   .pauseFor(2000)
                   .deleteAll()
-                  .typeString("Frontend Developer")
+                  .typeString("Tester QA")
                   .pauseFor(2000)
                   .deleteAll()
                   .start();

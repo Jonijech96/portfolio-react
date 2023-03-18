@@ -28,13 +28,13 @@ const AboutMe = () => {
           </p>
           <LineGradient width="w-1/3" />
           <p className="mt-10 mb-7 font-opensans font-semibold">
-            Hola 👋🏽! Mi nombre es Jonathan Chorolque Y Soy Desarrolador Web. Me
-            considero una persona proactiva, responsable y disciplinada. Me
-            apasiona aprender cada dia un poco mas de la programacion ya sea
-            especializandome mas en un lenguaje o practicar uno nuevo🤓. me
-            gusta el Futbol y la Natacion y los deportes en general aunque
-            actualmente paso mas tiempo sentado en una silla frente a una
-            pantalla😅. Espero te guste mi portafolio👦🏽.
+            Hola 👋🏽! Mi nombre es Jonathan Chorolque, Soy Desarrolador Web y
+            Tester QA. Me considero una persona proactiva, responsable y
+            disciplinada. Me apasiona aprender cada dia un poco mas de la
+            programacion ya sea especializandome mas en un lenguaje o practicar
+            uno nuevo🤓. me gusta el Futbol y la Natacion y los deportes en
+            general aunque actualmente paso mas tiempo sentado en una silla
+            frente a una pantalla😅. Espero te guste mi portafolio👦🏽.
           </p>
         </motion.div>
 
