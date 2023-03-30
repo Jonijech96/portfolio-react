@@ -25,8 +25,10 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const [theme, setTheme] = useState("light");
   const isDesktop = useMediaQuery("(min-width: 768px)");
-  const navbarBackground = isTopOfPage
+  let navbarBackground = isTopOfPage
     ? ""
+    : theme == "light"
+    ? "bg-red dark:bg-light-red text-white"
     : "bg-red dark:bg-light-red text-slate-800";
 
   const handleThemeSwitch = () => {
@@ -56,7 +58,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
 
         {/* DESKTOP NAV */}
         {isDesktop ? (
-          <div className="flex justify-between gap-16 font-opensans text-sm font-semibold items-center">
+          <div className="flex justify-between w-2/3 max-w-2xl font-opensans text-sm font-semibold items-center">
             <Link
               page="Inicio"
               selectedPage={selectedPage}

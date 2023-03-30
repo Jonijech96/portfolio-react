@@ -96,14 +96,14 @@ const Projects = () => {
             title="Project 2"
             name="Pokedex"
             description="Sass, React"
-            externalLink="https://incredible-frangollo-7111d6.netlify.app"
+            externalLink="https://poke-api-jonathan-chorolque.netlify.app/"
             githubLink="https://github.com/Jonijech96/poke-api"
           />
           <Project
             title="Project 3"
             name="CRUD"
             description="Chakra Ui"
-            externalLink="https://crudusers-jonathanchorolque.netlify.app/"
+            externalLink="https://crudusers-jonathanchorolque.netlify.app"
             githubLink="https://github.com/Jonijech96/crud-api"
           />
 
@@ -112,7 +112,7 @@ const Projects = () => {
             title="Project 4"
             name="RickMorty Location"
             description="React"
-            githubLink="https://github.com/Jonijech96/rick-and-morty-App"
+            githubLink="https://rickmorty-jonathan-chorolque.netlify.app"
             externalLink="https://mellifluous-mooncake-9db685.netlify.app"
           />
           <Project

@@ -744,6 +744,10 @@ video {
   max-width: 400px;
 }
 
+.max-w-2xl{
+  max-width: 42rem;
+}
+
 .basis-1\/2{
   flex-basis: 50%;
 }
@@ -1030,6 +1034,11 @@ video {
 .text-yellow{
   --tw-text-opacity: 1;
   color: rgb(253 204 73 / var(--tw-text-opacity));
+}
+
+.text-slate-100{
+  --tw-text-opacity: 1;
+  color: rgb(241 245 249 / var(--tw-text-opacity));
 }
 
 .placeholder-opaque-black::-moz-placeholder{

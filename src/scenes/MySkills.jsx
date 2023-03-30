@@ -124,6 +124,8 @@ const MySkills = () => {
               src="../assets/postgres-icon.svg"
               width={50}
             />
+            <img alt="close-icon" src="../assets/mysql-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/php-icon.svg" width={50} />
           </div>
         </motion.div>
         {/* IMAGINATIVE */}
@@ -148,6 +150,15 @@ const MySkills = () => {
           <div className="mt-5 flex flex-wrap gap-2">
             <img alt="close-icon" src="../assets/github-icon.svg" width={50} />
             <img alt="close-icon" src="../assets/git-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/jira-icons.svg" width={50} />
+            <img alt="close-icon" src="../assets/trello-icon.svg" width={50} />
+            <img alt="close-icon" src="../assets/postman-icon.png" width={50} />
+
+            <img
+              alt="close-icon"
+              src="../assets/selenium-icon.svg"
+              width={50}
+            />
           </div>
         </motion.div>
       </div>
